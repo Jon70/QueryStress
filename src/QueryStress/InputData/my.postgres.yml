@@ -1,0 +1,12 @@
+profile:
+    type: limitedConcurrency
+    arguments:
+        limit: 2
+limit:
+    type: queryCount
+    arguments:
+        limit: 4
+connection:
+    type: Postgres
+    arguments:
+        connectionString: "Host=localhost;Port=5432;Database=postgres;Username=postgres;Password=power"

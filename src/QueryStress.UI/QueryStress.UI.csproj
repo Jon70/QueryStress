@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Metrics.App\Metrics.App.csproj" />
+    <ProjectReference Include="..\Metrics.Core\Metrics.Core.csproj" />
+    <ProjectReference Include="..\QueryStress.App\QueryStress.App.csproj" />
+    <ProjectReference Include="..\QueryStress.MySql.App\QueryStress.MySql.App.csproj" />
+    <ProjectReference Include="..\QueryStress.MySql.Core\QueryStress.MySql.Core.csproj" />
+    <ProjectReference Include="..\QueryStress.Postgres.App\QueryStress.Postgres.App.csproj" />
+    <ProjectReference Include="..\QueryStress.Postgres.Core\QueryStress.Postgres.Core.csproj" />
+    <ProjectReference Include="..\QueryStress.Redis.App\QueryStress.Redis.App.csproj" />
+    <ProjectReference Include="..\QueryStress.Redis.Core\QueryStress.Redis.Core.csproj" />
+  </ItemGroup>
+
+</Project>

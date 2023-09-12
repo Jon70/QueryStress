@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "QueryStress": {
+      "commandName": "Project",
+      "commandLineArgs": "Scripts/my.postgres.sql InputData/my.postgres.yml"
+    }
+  }
+}
